@@ -2,13 +2,11 @@ name := "sbt-plantuml-plugin"
 
 organization := "org.jug-montpellier"
 
-version := "0.0.1"
-
 sbtPlugin := true
 
-libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "8048"
+libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "8057"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1"
 
 publishMavenStyle := false
 
