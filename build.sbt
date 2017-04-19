@@ -4,9 +4,9 @@ organization := "org.jug-montpellier"
 
 sbtPlugin := true
 
-libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "8057"
+libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "8059"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % Test
 
 publishMavenStyle := false
 
