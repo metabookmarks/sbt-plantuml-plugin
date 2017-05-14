@@ -10,11 +10,22 @@ object PlantUMLPlugin extends AutoPlugin {
 
   override def requires: Plugins = plugins.JvmPlugin
 
-  override lazy val projectSettings = Seq(
-    resourceGenerators in Compile += Def.task[Seq[File]] {
-      val inputs = IO.listFiles(baseDirectory.value / "src/main/resources/diagram").toList
+  override def trigger: PluginTrigger = allRequirements
 
-      val output = (resourceManaged in Compile).value / "diagram"
+  object autoImport {
+    val plantUMLSource = settingKey[File]("plantUML sources")
+    val plantUMLTarget = settingKey[String]("plantUML target")
+  }
+
+  import autoImport._
+
+  override lazy val projectSettings = Seq(
+    plantUMLSource := baseDirectory.value / "src/main/resources/diagram",
+    plantUMLTarget := "diagram",
+    resourceGenerators in Compile += Def.task[Seq[File]] {
+      val inputs = IO.listFiles(plantUMLSource.value).toList
+
+      val output = (resourceManaged in Compile).value / plantUMLTarget.value
 
       IO.createDirectory(output)
 
