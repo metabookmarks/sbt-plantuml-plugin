@@ -14,3 +14,6 @@ bintrayOrganization := Some("jug-montpellier")
 
 bintrayRepository := "sbt-plugin-releases"
 
+crossSbtVersions := Vector("0.13.15", "1.0.0-RC2")
+
+releaseCrossBuild := true
