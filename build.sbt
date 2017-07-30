@@ -2,7 +2,7 @@ import sbtrelease.ReleaseStateTransformations._
 
 name := "sbt-plantuml-plugin"
 
-organization := "org.jug-montpellier"
+organization := "io.metabookmarks"
 
 sbtPlugin := true
 
@@ -12,7 +12,7 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.3" % Test
 
 publishMavenStyle := false
 
-bintrayOrganization := Some("jug-montpellier")
+bintrayOrganization := Some("metabookmarks")
 
 bintrayRepository := "sbt-plugin-releases"
 
