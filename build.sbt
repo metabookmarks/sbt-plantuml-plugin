@@ -8,7 +8,7 @@ sbtPlugin := true
 
 libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "8059"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.3" % Test
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % Test
 
 publishMavenStyle := false
 
@@ -16,7 +16,7 @@ bintrayOrganization := Some("metabookmarks")
 
 bintrayRepository := "sbt-plugin-releases"
 
-crossSbtVersions := Vector("0.13.16", "1.0.0")
+crossSbtVersions := Vector("0.13.16", "1.0.1")
 
 releaseCrossBuild := true
 
