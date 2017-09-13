@@ -6,7 +6,7 @@ organization := "io.metabookmarks"
 
 sbtPlugin := true
 
-libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "8059"
+libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2017.16"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % Test
 
