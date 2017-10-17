@@ -6,7 +6,7 @@ organization := "io.metabookmarks"
 
 sbtPlugin := true
 
-libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2017.16"
+libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2017.18"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % Test
 
@@ -16,7 +16,7 @@ bintrayOrganization := Some("metabookmarks")
 
 bintrayRepository := "sbt-plugin-releases"
 
-crossSbtVersions := Vector("0.13.16", "1.0.1")
+crossSbtVersions := Vector("0.13.16", "1.0.2")
 
 releaseCrossBuild := true
 
