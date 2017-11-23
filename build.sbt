@@ -1,5 +1,7 @@
 import sbtrelease.ReleaseStateTransformations._
 
+scalafixSemanticdbVersion := "2.1.2"
+
 name := "sbt-plantuml-plugin"
 
 organization := "io.metabookmarks"
@@ -17,6 +19,8 @@ publishMavenStyle := false
 bintrayOrganization := Some("metabookmarks")
 
 bintrayRepository := "sbt-plugin-releases"
+
+scalacOptions += "-Ywarn-unused-import"
 
 crossSbtVersions := Vector("0.13.16", "1.0.2")
 
