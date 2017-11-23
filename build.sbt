@@ -20,9 +20,9 @@ bintrayOrganization := Some("metabookmarks")
 
 bintrayRepository := "sbt-plugin-releases"
 
-scalacOptions += "-Ywarn-unused-import"
+scalacOptions in console += "-Ywarn-unused-import"
 
-crossSbtVersions := Vector("0.13.16", "1.0.2")
+crossSbtVersions := Vector("0.13.16", "1.0.3")
 
 releaseCrossBuild := true
 
