@@ -19,7 +19,7 @@ object PlantUMLPlugin extends AutoPlugin {
 
   import autoImport._
 
-  override lazy val projectSettings = Seq(
+  @volatile override lazy val projectSettings = Seq(
     plantUMLSource := baseDirectory.value / "src/main/resources/diagram",
     plantUMLTarget := "diagram",
     resourceGenerators in Compile += Def.task[Seq[File]] {
