@@ -1,7 +1,5 @@
 import sbtrelease.ReleaseStateTransformations._
 
-scalafixSemanticdbVersion := "2.1.4"
-
 name := "sbt-plantuml-plugin"
 
 organization := "io.metabookmarks"
