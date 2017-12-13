@@ -1,6 +1,6 @@
 import sbtrelease.ReleaseStateTransformations._
 
-scalafixSemanticdbVersion := "2.1.2"
+scalafixSemanticdbVersion := "2.1.4"
 
 name := "sbt-plantuml-plugin"
 
@@ -10,7 +10,7 @@ sbtPlugin := true
 
 scalaVersion := "2.12.4"
 
-libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2017.19"
+libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2017.20"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % Test
 
@@ -22,7 +22,7 @@ bintrayRepository := "sbt-plugin-releases"
 
 scalacOptions in console += "-Ywarn-unused-import"
 
-crossSbtVersions := Vector("0.13.16", "1.0.4")
+crossSbtVersions := Vector("1.0.4", "0.13.16")
 
 releaseCrossBuild := true
 
