@@ -8,9 +8,9 @@ sbtPlugin := true
 
 scalaVersion := "2.12.4"
 
-libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2018.0"
+libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2018.1"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % Test
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test
 
 publishMavenStyle := false
 
