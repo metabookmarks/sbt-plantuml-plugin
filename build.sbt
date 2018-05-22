@@ -8,7 +8,7 @@ sbtPlugin := true
 
 scalaVersion := "2.12.6"
 
-libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2018.5"
+libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2018.6"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test
 
@@ -20,7 +20,7 @@ bintrayRepository := "sbt-plugin-releases"
 
 scalacOptions in console += "-Ywarn-unused-import"
 
-crossSbtVersions := Vector("1.1.5", "0.13.16")
+crossSbtVersions := Vector("1.1.5", "0.13.17")
 
 releaseCrossBuild := true
 
