@@ -4,7 +4,7 @@ name := "sbt-plantuml-plugin"
 
 organization := "io.metabookmarks"
 
-sbtPlugin := true
+enablePlugins(SbtPlugin)
 
 scalaVersion := "2.12.6"
 
