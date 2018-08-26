@@ -8,7 +8,7 @@ enablePlugins(SbtPlugin)
 
 scalaVersion := "2.12.6"
 
-libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2018.9"
+libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2018.10"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test
 
