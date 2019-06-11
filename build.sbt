@@ -10,7 +10,7 @@ scalaVersion := "2.12.8"
 
 libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2019.6"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.7" % Test
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % Test
 
 publishMavenStyle := false
 
