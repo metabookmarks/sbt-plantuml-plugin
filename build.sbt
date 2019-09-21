@@ -20,7 +20,7 @@ bintrayRepository := "sbt-plugin-releases"
 
 scalacOptions in console += "-Ywarn-unused-import"
 
-crossSbtVersions := Vector("1.3.0", "0.13.18")
+crossSbtVersions := Vector("1.3.2", "0.13.18")
 
 releaseCrossBuild := true
 
