@@ -6,7 +6,7 @@ organization := "io.metabookmarks"
 
 enablePlugins(SbtPlugin)
 
-scalaVersion := "2.12.9"
+scalaVersion := "2.12.10"
 
 libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2019.11"
 
@@ -20,7 +20,7 @@ bintrayRepository := "sbt-plugin-releases"
 
 scalacOptions in console += "-Ywarn-unused-import"
 
-crossSbtVersions := Vector("1.3.2", "0.13.18")
+crossSbtVersions := Vector("1.3.3", "0.13.18")
 
 releaseCrossBuild := true
 
