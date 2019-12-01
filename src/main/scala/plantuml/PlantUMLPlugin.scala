@@ -7,7 +7,6 @@ import net.sourceforge.plantuml.SourceFileReader
 import scala.collection.JavaConverters._
 
 object PlantUMLPlugin extends AutoPlugin {
-
   override def requires: Plugins = plugins.JvmPlugin
 
   override def trigger: PluginTrigger = allRequirements
@@ -39,5 +38,4 @@ object PlantUMLPlugin extends AutoPlugin {
         }
         .taskValue
   )
-
 }
