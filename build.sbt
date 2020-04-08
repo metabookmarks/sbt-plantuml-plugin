@@ -1,3 +1,4 @@
+//Customized release
 import sbtrelease.ReleaseStateTransformations._
 
 name := "sbt-plantuml-plugin"
