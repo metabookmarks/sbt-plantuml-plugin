@@ -22,20 +22,20 @@ object PlantUMLPlugin extends AutoPlugin {
     plantUMLSource := baseDirectory.value / "src/main/resources/diagram",
     plantUMLTarget := "diagram",
     resourceGenerators in Compile += Def
-        .task[Seq[File]] {
-          val inputs = IO.listFiles(plantUMLSource.value).toList
+      .task[Seq[File]] {
+        val inputs = IO.listFiles(plantUMLSource.value).toList
 
-          val output = (resourceManaged in Compile).value / plantUMLTarget.value
+        val output = (resourceManaged in Compile).value / plantUMLTarget.value
 
-          IO.createDirectory(output)
+        IO.createDirectory(output)
 
-          inputs
-            .flatMap { input =>
-              val plant = new SourceFileReader(input, output)
-              plant.getGeneratedImages.asScala
-            }
-            .map(_.getPngFile)
-        }
-        .taskValue
+        inputs
+          .flatMap { input =>
+            val plant = new SourceFileReader(input, output)
+            plant.getGeneratedImages.asScala
+          }
+          .map(_.getPngFile)
+      }
+      .taskValue
   )
 }
