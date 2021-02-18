@@ -11,7 +11,7 @@ scalaVersion := "2.12.12"
 
 libraryDependencies += "net.sourceforge.plantuml" % "plantuml" % "1.2021.1"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.3" % Test
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.4" % Test
 
 scalafmtOnCompile := true
 
