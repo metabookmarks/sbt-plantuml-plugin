@@ -17,9 +17,9 @@ scalafmtOnCompile := true
 
 publishMavenStyle := false
 
-bintrayOrganization := Some("metabookmarks")
+githubOwner := "metabookmarks"
 
-bintrayRepository := "sbt-plugin-releases"
+githubRepository := "sbt-plantuml-plugin"
 
 scalacOptions in console += "-Ywarn-unused-import"
 
